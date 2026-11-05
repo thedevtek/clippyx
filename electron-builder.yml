@@ -1,0 +1,15 @@
+appId: com.clippyx.app
+productName: Clippyx
+directories:
+  output: release
+files:
+  - out/**
+  - package.json
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+  artifactName: Clippyx-Setup-${version}.${ext}
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
